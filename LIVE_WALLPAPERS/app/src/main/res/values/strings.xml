@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Live wallpapers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_the_photo">Choose the photo</string>
+    <string name="show_all_presets">Show all presets</string>
+    <string name="choose_time_to_set_a_new_wallpaper_image">Choose time to set a new wallpaper image</string>
+    <string name="choose_time_by_geoposition">Choose time by geoposition</string>
+    <string name="choose_current_time">Choose current time</string>
+    <string name="weekdays_to_set">Weekdays to set</string>
+    <string name="choose_time">Choose time</string>
+    <string name="where_to_put">Where to put</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="phone_screen">Phone screen</string>
+    <string name="settings">Settings</string>
+</resources>
