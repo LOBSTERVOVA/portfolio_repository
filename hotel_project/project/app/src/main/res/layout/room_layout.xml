@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/roomName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/sf_pro_display_black"
+        android:textColor="@color/dark_gray"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager2" />
+
+    <TextView
+        android:id="@+id/pec1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/roomName"
+        app:layout_constraintTop_toBottomOf="@+id/roomName" />
+
+    <TextView
+        android:id="@+id/pec2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/cardView9"
+        app:layout_constraintTop_toBottomOf="@+id/roomName" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="-5dp"
+        app:cardBackgroundColor="@color/very_light_gray"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pec1"
+        app:layout_constraintEnd_toEndOf="@+id/pec1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/pec1"
+        app:layout_constraintTop_toTopOf="@+id/pec1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginBottom="-5dp"
+        app:cardBackgroundColor="@color/very_light_gray"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pec2"
+        app:layout_constraintEnd_toEndOf="@+id/pec2"
+        app:layout_constraintStart_toStartOf="@+id/pec2"
+        app:layout_constraintTop_toTopOf="@+id/pec2" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#34046CED"
+        android:clickable="true"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/more"
+        android:textColor="#046CED"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pec1"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_display_black"
+        android:textColor="@color/dark_gray"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/more"
+        app:layout_constraintTop_toBottomOf="@+id/more" />
+
+    <TextView
+        android:id="@+id/price_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/price1"
+        app:layout_constraintStart_toEndOf="@+id/price1" />
+
+    <Button
+        android:id="@+id/buttonBook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/light_blue"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:text="@string/choose_room_button"
+        android:textSize="16sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_for" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/very_light_gray"
+        app:cardBackgroundColor="@color/very_light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
